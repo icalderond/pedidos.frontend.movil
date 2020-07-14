@@ -1,6 +1,5 @@
-﻿using System;
+﻿using pedidos.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace pedidos
 {
@@ -10,7 +9,7 @@ namespace pedidos
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

@@ -6,6 +6,33 @@
              mc:Ignorable="d"
              x:Class="pedidos.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <!--#region Size of fonts-->
+            <OnPlatform x:Key="SubTitleSize"
+                         x:TypeArguments="x:Double"
+                         Android="24"
+                         iOS="24" />
+            <OnPlatform x:Key="BodySize"
+                        x:TypeArguments="x:Double"
+                        Android="16"
+                        iOS="16" />
+            <!--#endregion Size of fonts-->
+            <!--#region Colors of identity-->
+            <Color x:Key="ButtonBackColor">#12A562</Color>
+            <Color x:Key="ButtonFontColor">#FFFFFF</Color>
+            <!--#endregion Colors of identity-->
+            
+            <!--#region Styles for controls-->
+            <Style TargetType="Button"
+                   x:Key="CommonButton">
+                <Setter Property="FontSize"
+                        Value="{StaticResource BodySize}" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource ButtonFontColor}" />
+                <Setter Property="BackgroundColor"
+                        Value="{StaticResource ButtonBackColor}" />
+            </Style>
+            <!--#endregion Styles for controls-->
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

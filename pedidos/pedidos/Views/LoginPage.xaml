@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="pedidos.Views.LoginPage">
+    <ContentPage.Content>
+        <Grid Padding="10,5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="5*" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="1" VerticalOptions="Start">
+                <Image Source="taco" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="150" HeightRequest="150"/>
+                <Label FontAttributes="Bold"
+                       Text="User"
+                       FontSize="{StaticResource BodySize}" />
+                <Entry Placeholder="User"
+                       FontSize="{StaticResource BodySize}" />
+                <Label Text="Password"
+                       FontAttributes="Bold"
+                       FontSize="{StaticResource BodySize}" />
+                <Entry Placeholder="Password"
+                       FontSize="{StaticResource BodySize}" />
+                <Button Text="Login"
+                        Style="{StaticResource CommonButton}" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
